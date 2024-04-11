@@ -22,21 +22,30 @@ h1 {
 }
 
 .home {
-    background-image: url(images/ukgarden.jpg);
+    background: url(images/arch1.png) fixed center no-repeat , url(images/ukgarden.jpg) fixed center no-repeat;
     min-height: 900px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1900px, cover;
+    display: flex;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 100px;
 }
 
 .login {
-    height: 900px;
+    height: 600px;
     display: flex;
     justify-content: center;
-    
+    margin-top: 450px;
 }
 
 .boxtext {
     font-family: var(--font-family-2);
+}
+
+.title {
+    margin-top: 300px;
+    font-size: 210px;
+    text-shadow: 2px 2px black;
 }

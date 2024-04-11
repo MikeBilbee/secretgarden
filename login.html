@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/favicon">
+	<title>Secret Garden</title>
+	<meta name="description" content="Bootstrap is a free and open-source CSS framework">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Corinthia" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+	<div class="home">
+
+	</div>
+
+	<div class="login">
+		<div>
+			<h1> Login </h1>
+			<form class="form" action="javascript:redirect()">
+				<label for="firstname">First Name</label>
+				<input class="boxtext" type="text" id="firstname" placeholder="Firstname"/>
+				<label for="birthmonth">Birth Month</label>
+				<select class="boxtext" name="birthmonth" id="month">
+				  <option value="No Month Selected">No Month Selected</option>
+				  <option value="1jan.html">January</option>
+				  <option value="2feb.html">Febuary</option>
+				  <option value="3mar.html">March</option>
+				  <option value="4apr.html">April</option>
+				  <option value="5may.html">May</option>
+				  <option value="6jun.html">June</option>
+				  <option value="7jul.html">July</option>
+				  <option value="8aug.html">August</option>
+				  <option value="9sep.html">September</option>
+				  <option value="10oct.html">October</option>
+				  <option value="11nov.html">November</option>
+				  <option value="12dec.html">December</option>
+				</select>
+				<button onclick="setCookies" type="button">Enter</button>
+		  </form>
+		</div>
+
+		<script class="">
+	  		function setCookies() {
+				document.cookie = `firstname=${document.querySelector('#firstname').value}`;
+				document.cookie = `month=${document.querySelector('#month').value}`;
+	  		}
+		</script>
+
+<script>
+	function redirect() {
+		var selectedPage = document.getElementById("pageSelect").value;
+		if (selectedPage !== "") {
+			window.location.href = selectedPage;
+		}
+	}
+</script>
+	</div>
+
+	<footer>
+
+	</footer>
+</body>
+
+</html>

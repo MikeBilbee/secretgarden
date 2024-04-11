@@ -21,6 +21,22 @@ Your mission is to create an engaging and profound online experience that repres
 
 <h2> Contents </h2>
 
-| File | Description | assets |
+| File | Description | Assets |
 | ----- | ----- | ----- |
-|  |  |  |
+| [login.html]() |  | []() []() |
+| [jan.html]() |  | []() []() |
+| [feb.html]() |  | []() []() |
+| [mar.html]() |  | []() []() |
+| [apr.html]() |  | []() []() |
+| [may.html]() |  | []() []() |
+| [jun.html]() |  | []() []() |
+| [jul.html]() |  | []() []() |
+| [aug.html]() |  | []() []() |
+| [sep.html]() |  | []() []() |
+| [oct.html]() |  | []() []() |
+| [nov.html]() |  | []() []() |
+| [dec.html]() |  | []() []() |
+| [styles.css]() |  |  |
+---
+
+© 2024 Stephaine Biggs, Mike Bilbee, Chris Gillis

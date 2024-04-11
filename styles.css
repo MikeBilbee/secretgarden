@@ -1,0 +1,42 @@
+/* Variables */
+
+:root {
+	--font-family: 'Fleur De Leah', serif;
+    --font-family-2: 'Corinthia';
+	--color-white: #FFFFFF;
+	--color-dark: #000000;
+	--color-gray: #979797;
+	--color-purple: #C271FF;
+    --color-gold: #D4AF37;
+}
+
+body {
+    background-color: var(--color-dark);
+    font-family: var(--font-family);
+    color: var(--color-gold);
+    height: 900px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.home {
+    background-image: url(images/ukgarden.jpg);
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.boxtext {
+    font-family: var(--font-family-2);
+}

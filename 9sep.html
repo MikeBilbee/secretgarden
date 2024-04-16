@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Secret GArden: September</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Fleur+De+Leah&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<style>
+    body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+		height: 100vh;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    svg {
+        font-family: "Montserrat";
+        font-size: 15em;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 1s font-size;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+    }
+
+    svg rect {
+        fill: white;
+        mask: url(#mask)
+    }
+
+    .carnation1 {
+        position: absolute;
+        top: 51%;
+        left: 18%;
+        transform: translateX(-250%);
+        transition: opacity 0.5s ease;
+        width: 50px; /* Adjust the width of the image */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .carnation2 {
+        position: absolute;
+        top: 51%;
+        left: 68%;
+        transform: translateX(-170%);
+        transition: opacity 0.5s ease;
+        width: 50px; /* Adjust the width of the image */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .carnation3 {
+        position: absolute;
+        top: 57%;
+        left: 25%;
+        transform: translateX(1200%);
+        transition: opacity 0.5s ease;
+        width: 50px; /* Adjust the width of the image */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .carnation4 {
+        position: absolute;
+        top: 55.5%;
+        left: 5%;
+        transform: translateX(700%);
+        transition: opacity 0.5s ease;
+        width: 50px; /* Adjust the width of the image */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        opacity: 1;
+        z-index: 0;
+    }
+
+    .carnation5 {
+        position: absolute;
+        top: 56%;
+        left: 32%;
+        transform: translateX(250%);
+        transition: opacity 0.5s ease;
+        width: 50px; /* Adjust the width of the image */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .carnation6 {
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        transform: translateX(-10%);
+        transition: opacity 0.5s ease;
+        width: 50px; /* Adjust the width of the image */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        opacity: 1;
+        z-index: 0;
+    }
+
+    .carnation7 {
+        position: absolute;
+        top: 57%;
+        left: 10%;
+        transform: translateX(1200%);
+        transition: opacity 0.5s ease;
+        width: 50px; /* Adjust the width of the image */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        opacity: 1;
+        z-index: 0;
+    }
+
+    .carnation8 {
+        position: absolute;
+        top: 54%;
+        left: 33%;
+        transform: translateX(1200%);
+        transition: opacity 0.5s ease;
+        width: 50px; /* Adjust the width of the image */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .carnation9 {
+        position: absolute;
+        top: 53%;
+        left: 32%;
+        transform: translateX(1200%);
+        transition: opacity 0.5s ease;
+        width: 50px; /* Adjust the width of the image */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        opacity: 1;
+        z-index: 0;
+    }
+
+    img {
+        margin-top: -200px;
+        margin-right: 20px;
+    }
+
+    .drop-shadow {
+        filter: drop-shadow(10px 5px 10px #555);
+    }
+
+    .flower-text {
+        position: absolute;
+        bottom: 0;
+        left: 49%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #ffc30b;
+        padding: 5px;
+        width: 100%;
+        font-family: 'Corinthia';
+        font-size: 200px;
+        text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.5);
+        height: 52%;
+        z-index: 2;
+    }
+
+    .arrow {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        transform: rotate(-50%, -50%);
+        margin-top: -13%;
+        left: 48%;
+        margin-bottom: -9%;
+    }
+
+    .arrow span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-bottom: 5px solid #ffc30b;
+        border-right: 5px solid #ffc30b;
+        transform: rotate(45deg);
+        padding: 10px;
+        animation: scroll 2s infinite;
+    }
+
+    @media only screen and (max-width: 576px) {
+        /* Hide the arrow on screens with a width of 600px or less */
+        .arrow {
+            display: none;
+        }
+    }
+
+    .arrow span:nth-child(2) {
+        animation-delay: -.2s;
+    }
+
+    .arrow span:nth-child(3) {
+        animation-delay: -.4s;
+    }
+
+    @keyframes scroll {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px, -20px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(20px, 20px);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .flower-text {
+            left: 23.5%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            top: -12%;
+            font-size: 50px;
+            text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
+            transition: all 0.5 ease;
+        }
+    }
+
+    .corinthia-regular {
+        font-family: "Corinthia", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .corinthia-bold {
+        font-family: "Corinthia", cursive;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+
+    @media screen and (max-width: 1085px) {
+        svg {
+            font-size: 4em;
+        }
+    
+        .carnation1,
+        .carnation2,
+        .carnation3,
+        .carnation4,
+        .carnation5,
+        .carnation6,
+        .carnation7,
+        .carnation8,
+        .carnation9 {
+            opacity: 0; /* Set initial opacity to 0 */
+            transition: opacity 0.5s ease; /* Add transition effect */
+        }
+    }
+    
+    @media screen and (max-width: 1080px) {
+        .carnation1,
+        .carnation2,
+        .carnation3,
+        .carnation4,
+        .carnation5,
+        .carnation6,
+        .carnation7,
+        .carnation8,
+        .carnation9 {
+            opacity: 0; /* Set opacity to 0 */
+            transition: opacity 0.5s ease; /* Add transition effect */
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        svg,
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 30%;
+            width: 100%;
+            transition: 0.5s ease;
+            overflow-x: hidden;
+        }
+    
+        .carnation1,
+        .carnation2,
+        .carnation3,
+        .carnation4,
+        .carnation5,
+        .carnation6,
+        .carnation7,
+        .carnation8,
+        .carnation9 {
+            opacity: 0; /* Set initial opacity to 0 */
+            transition: opacity 0.5s ease; /* Add transition effect */
+        }
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        min-height: 100vh; /* Ensure the body covers the entire viewport height */
+        min-width: 100vh;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+        margin-left: -50px;
+    }
+    .box {
+        position: relative;
+        width: 25%;
+        height: 50%;
+        border: 1px solid #ffc30b;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        left: 50px;
+    }
+    
+    .box-text {
+        position: absolute;
+        bottom: 15px;
+        left: 30px;
+        font-size: 20px; /* Adjust font size as needed */
+        font-family: Arial, Helvetica, sans-serif;
+        color: #474747;
+    }
+    .box:nth-child(odd) {
+        background-color: #f0f0f0;
+    }
+    .box:nth-child(even) {
+        background-color: #ccc;
+    }
+    /* Adjustments for the third box in the first row */
+    .container .box:nth-child(3) {
+        width: 50%; /* Take up the space of two boxes */
+        height: 50vh;
+    }
+
+    a {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 100px;
+        left: 100%;
+        padding: 15px 30px;
+        color: #474747;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 50px;
+        overflow: hidden;
+        text-decoration: none;
+        font-weight: bolder;
+        animation: pulse 2s infinite alternate cubic-bezier(0.25, 0.1, 0.25, 1); /* Pulsating animation */
+        transform: translate(-50%, -50%) translate(100px, 50px); /* Adjust the values as needed */
+    }
+
+    /* Keyframes for pulsating animation */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.2); /* Increased scale for intense pulsation */
+        }
+    }
+
+    a span {
+        position: absolute;
+        display: block;
+    }
+
+    a span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #ffc30b);
+    }
+
+    a:hover span:nth-child(1) {
+        left: 100%;
+        transition: 1s;
+    }
+
+    a span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #ffc30b);
+    }
+
+    a:hover span:nth-child(3) {
+        right: 100%;
+        transition: 1s;
+        transition-delay: .5s;
+    }
+
+    a span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #ffc30b);
+    }
+
+    a:hover span:nth-child(2) {
+        top: 100%;
+        transition: 1s;
+        transition-delay: .25s;
+    }
+
+    a span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #ffc30b);
+    }
+
+    a:hover span:nth-child(4) {
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: .75s;
+    }
+
+    .center {
+        position: absolute;
+        top: 55%;
+        left: 9%;
+        transform: translate(-50%, -50%);
+    }
+
+    .popup {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .popup .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 100ms ease-in-out 200ms;
+    }
+
+    .popup .popup-content {
+        position: absolute;
+        top: 30%;
+        left: 160%;
+        transform: translate(-50%, -50%) scale(1.15);
+        width: 250px;
+        max-width: 350px;
+        background: #fff;
+        padding: 25px;
+        border-radius: 20px;
+        opacity: 0;
+        box-shadow: 0px 2px 2px 5px rgba(0, 0, 0, 0.05);
+        transition: all 300ms ease-in-out;
+    }
+
+    .popup .popup-content h2 {
+        margin: 10px 10px;
+        font-size: 25px;
+        color: #111;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .popup .popup-content p {
+        margin: 15px 0px;
+        color: #222;
+        font-size: 16px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .popup .popup-content .controls {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px 0px;
+    }
+
+    .popup .popup-content .controls button {
+        padding: 10px 20px; 
+        border: none;
+        outline: none;
+        font-size: 15px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .popup .popup-content .controls .close-btn {
+        background: transparent;
+        color: #3284ed;
+    }
+
+    .popup.active {
+        top: 0px;
+        transition: top 0ms ease-in-out 0ms;
+    }
+
+    .popup.active .overlay {
+        opacity: 1;
+        transition: all 300ms ease-in-out;
+    }
+
+    .popup.active .popup-content {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    #open-pupup .popup-content {
+        width: 250px; /* Adjust the width as needed */
+        max-width: 500px; /* Set a maximum width if necessary */
+        margin-left: 125px;
+    }
+
+    #cycle-container .center {
+        position: absolute;
+        top: 55%;
+        right: 75%; /* Adjust the left position as needed */
+        transform: translate(-50%, -50%);
+    }
+
+    #cycle-popup .popup-content {
+        width: 250px; /* Adjust the width as needed */
+        max-width: 500px; /* Set a maximum width if necessary */
+        margin-left: 110px;
+    }
+
+    #watering-container .center {
+        position: absolute;
+        top: 55%;
+        right: 85%; /* Adjust the left position as needed */
+        transform: translate(-50%, -50%);
+    }
+    
+    #watering-popup .popup-content {
+        width: 250px; /* Adjust the width as needed */
+        max-width: 500px; /* Set a maximum width if necessary */
+        margin-left: 125px;
+    }
+
+    #sunlight-container .center {
+        position: absolute;
+        top: 55%;
+        right: 60%; /* Adjust the left position as needed */
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    #sunlight-popup .popup-content {
+        width: 250px; /* Adjust the width as needed */
+        max-width: 500px; /* Set a maximum width if necessary */
+        margin-left: 35px;
+    }
+    
+    #indoor-container .center {
+        position: absolute;
+        top: 55%;
+        right: 80%; /* Adjust the left position as needed */
+        transform: translate(-50%, -50%);
+    }
+    
+    #indoor-popup .popup-content {
+        width: 250px; /* Adjust the width as needed */
+        max-width: 500px; /* Set a maximum width if necessary */
+        margin-left: 125px;
+    }
+    
+    #hardiness-container .center {
+        position: absolute;
+        top: 55%;
+        right: 65%; /* Adjust the left position as needed */
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    #hardiness-popup .popup-content {
+        width: 250px; /* Adjust the width as needed */
+        max-width: 500px; /* Set a maximum width if necessary */
+        margin-left: 70px;
+    }
+    
+    .image-container {
+        width: 100%; /* Make the container take up the full width of the box */
+        height: 100%; /* Make the container take up the full height of the box */
+        overflow: hidden; /* Hide any overflowing content */
+        z-index: 0;
+    }
+    
+    .image-container img {
+        margin-top: 0%;
+        width: 100%; /* Make the image take up the full width of the container */
+        height: 100%; /* Automatically adjust the height to maintain aspect ratio */
+        display: block; /* Ensure the image behaves as a block element */
+        object-fit: cover; /* Scale the image while preserving its aspect ratio to cover the entire container */
+        z-index: -1;
+    }
+    
+    @media screen and (max-width: 767px) {
+        .container {
+            position: relative; /* Remove absolute positioning */
+            height: auto; /* Set height to auto */
+            width: 60%;
+            display: flex; /* Add display flex */
+            flex-wrap: wrap; /* Wrap boxes */
+            justify-content: center; /* Center boxes horizontally */
+            align-items: center; /* Center boxes vertically */
+            margin-top: 25%;
+        }
+
+        .center {
+            margin-top: 5%;
+            margin-left: 3%;
+        }
+
+        #cycle-container .center {
+            left: 15px;
+        }
+    
+        #sunlight-container .center {
+            left: -100px;
+            margin-right: 65px;
+        }
+
+        #hardiness-container .center {
+            left: -60px;
+            margin-right: 30px;
+        }
+
+        .box {
+            width: 100%; /* Take up full width */
+            height: 300px; /* Set a fixed height for all boxes */
+            border: 1px solid #ffc30b;
+            box-sizing: border-box;
+        }
+        .container .box:nth-child(3) {
+            width: 100%; /* Take up full width */
+            height: 300px; /* Take up full viewport height */
+        }
+        .mobile-image {
+            position: absolute;
+            top: -7.5%;
+            left: 16%; /* Horizontal center */
+            transform: translateX(-50%); /* Center horizontally */
+            z-index: 1;
+            transition: .5s ease;
+        }             
+    }
+
+    @media screen and (min-width: 576px) {
+        .mobile-image {
+            display: none; /* Hide the image on screens larger than 767px */
+        }
+    }
+
+    footer {
+        background-color: #fff; /* Background color */
+        color: #050505; /* Text color */
+        padding: 20px; /* Padding to create space around content */
+        text-align: center; /* Center-align text */
+        position: relative; /* Fixed positioning */
+        bottom: 0; /* Stick it to the bottom of the viewport */
+        width: 100%; /* Full width */
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+</style>
+</head>
+<body>
+
+<video autoplay playsinline muted loop preload>
+    <source src="images/morningglory.mp4">
+</video>
+
+<svg height="100%" width="100%">
+    <defs>
+        <mask id="mask" x="0" y="0" height="100%" width="100%">
+            <rect x="0" y="0" height="100%" width="100%" />
+            <text x="50%" y="50%" fill="black" text-anchor="middle" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">September</text>
+
+        </mask>
+    </defs>
+    <rect x="0" y="0" height="100%" width="100%" />
+</svg>
+
+    <div class="carnation1">
+        <img class="drop-shadow" src="images/morningglory.png" alt="cornation" width="400" height="400"  />
+    </div>
+    <div class="carnation2">
+        <img class="drop-shadow" src="images/morningglory2.png" alt="cornation" width="400" height="400"  />
+    </div>
+    <div class="carnation3">
+        <img class="drop-shadow" src="images/morningglory3.png" alt="cornation" width="200" height="200"  />
+    </div>
+    <div class="carnation4">
+        <img class="drop-shadow" src="images/morningglory3.png" alt="cornation" width="200" height="200"  />
+    </div>
+    <div class="carnation5">
+        <img class="drop-shadow" src="images/morningglory5.png" alt="cornation" width="350" height="350"  />
+    </div>
+    <div class="carnation6">
+        <img class="drop-shadow" src="images/morningglory4.png" alt="cornation" width="350" height="350"  />
+    </div>
+    <div class="carnation7">
+        <img class="drop-shadow" src="images/morningglory4.png" alt="cornation" width="350" height="350"  />
+    </div>
+
+    <div class="flower-text">Morning Glory</div>
+
+    <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="mobile-image">
+        <img src="images/morningglory5.png" alt="Mobile Image" style="width: 85px; height: 85px;" class="drop-shadow">
+    </div>
+    
+
+    <div class="container">
+        <div class="box" id="edible-container">
+            <div class="center">
+                <a href="#" id="open-popup">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    NO
+                </a>
+                <div class="popup" id="popup">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <h2>NO</h2>
+                        <p>Fortunately, eating morning glory flowers is not dangerous, unless the child chokes. BUT the seeds can be poisonous, especially in large quantities. They contain a chemical similar to LSD. Symptoms can range widely, from diarrhea to hallucinations.</p>
+                        <div class="controls">
+                            <button class="close-btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="box-text">Edible</p>
+        </div>
+        <div class="box" id="cycle-container">
+            <div class="center">
+                <a href="#" id="open-cycle-popup">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    ANNUAL
+                </a>
+                <div class="popup" id="cycle-popup">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <h2>SUMMER</h2>
+                        <p>Morning glories are vigorous annual vines with beautiful trumpet-shaped flowers. They thrive in hot weather and in sunny spots, and bloom prolifically through the summer.</p>
+                        <div class="controls">
+                            <button class="close-btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="box-text">Cycle</p>
+        </div>
+        <div class="box" id="pictures-container">
+            <div class="image-container">
+                <img src="images/morningglorypic.jpeg" alt="carnation bouquet">
+            </div>
+            <p class="box-text">Pictures</p>
+        </div>        
+        <div class="box" id="watering-container">
+            <div class="center">
+                <a href="#" id="open-watering-popup">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Weekly
+                </a>
+                <div class="popup" id="watering-popup">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <h2>WATERING</h2>
+                        <p>Morning glories prefer evenly moist soil, but they can't tolerate being overwatered or dry. You can water them once a week with about one inch of water, or less frequently but more deeply.</p>
+                        <div class="controls">
+                            <button class="close-btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="box-text">Watering</p>
+        </div>
+        <div class="box" id="sunlight-container">
+            <div class="center">
+                <a href="#" id="open-sunlight-popup">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Full Sun
+                </a>
+                <div class="popup" id="sunlight-popup">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <h2>SUNLIGHT</h2>
+                        <p>Morning glory plants prefer full sun, with at least six to eight hours of direct light per day during the growing season. The flowers will only open when they are in direct sunlight, so daily exposure to full sun will give you the longest amount of bloom time. 
+                        </p>
+                        <div class="controls">
+                            <button class="close-btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="box-text">Sunlight</p>
+        </div>
+        <div class="box" id="indoor-container">
+            <div class="center">
+                <a href="#" id="open-indoor-popup">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Indoor
+                </a>
+                <div class="popup" id="indoor-popup">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <h2>YES</h2>
+                        <p>Yes, you can grow Morning Glory indoors, but you will have to provide full sun and warm temperatures for adequate growth. You could place your plants under a light if full sun is not an option. Also, be careful with temperature control. You won't want to leave them in a cool room.</p>
+                        <div class="controls">
+                            <button class="close-btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="box-text">Indoor</p>
+        </div>
+        <div class="box" id="hardiness-container">
+            <div class="center">
+                <a href="#" id="open-hardiness-popup">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Zones 2 - 11
+                </a>
+                <div class="popup" id="hardiness-popup">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <h2>HARDINESS</h2>
+                        <p>Morning glories can grow in zones 2–11, depending on the variety. Morning glories are perennials in zones 9–11, where the temperature doesn't usually drop below 45°F, and annuals in zones 2–8.</p>
+                        <div class="controls">
+                            <button class="close-btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="box-text">Hardiness</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Stephaine Biggs, Mike Bilbee, Chris Gillis</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function createPopup(id) {
+                let popupNode = document.querySelector(id);
+                let overlay = popupNode.querySelector(".overlay");
+                let closeBtn = popupNode.querySelector(".close-btn");
+    
+                function openPopup(event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    popupNode.classList.add("active");
+                }
+    
+                function closePopup() {
+                    popupNode.classList.remove("active");
+                }
+    
+                overlay.addEventListener("click", closePopup);
+                closeBtn.addEventListener("click", closePopup);
+                return openPopup;
+            }
+    
+            let popup = createPopup("#popup");
+            let cyclePopup = createPopup("#cycle-popup");
+            let wateringPopup = createPopup("#watering-popup");
+            let sunlightPopup = createPopup("#sunlight-popup");
+            let indoorPopup = createPopup("#indoor-popup");
+            let hardinessPopup = createPopup("#hardiness-popup"); // Add hardiness popup handler
+    
+            document.querySelector("#open-popup").addEventListener("click", popup);
+            document.querySelector("#open-cycle-popup").addEventListener("click", cyclePopup);
+            document.querySelector("#open-watering-popup").addEventListener("click", wateringPopup);
+            document.querySelector("#open-sunlight-popup").addEventListener("click", sunlightPopup);
+            document.querySelector("#open-indoor-popup").addEventListener("click", indoorPopup);
+            document.querySelector("#open-hardiness-popup").addEventListener("click", hardinessPopup); // Add hardiness popup event listener
+    
+            // Function to disable popup buttons on mobile
+            function disablePopupButtonsOnMobile() {
+                let isMobile = window.matchMedia("only screen and (max-width: 767px)").matches;
+                if (isMobile) {
+                    document.querySelectorAll(".box a").forEach(function(button) {
+                        button.style.pointerEvents = "none";
+                    });
+                } else {
+                    document.querySelectorAll(".box a").forEach(function(button) {
+                        button.style.pointerEvents = "auto";
+                    });
+                }
+            }
+    
+            // Call the function initially
+            disablePopupButtonsOnMobile();
+    
+            // Call the function whenever the window is resized
+            window.addEventListener("resize", disablePopupButtonsOnMobile);
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            var swiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                loop: true, // Enable continuous loop
+                navigation: {
+                    nextEl: '.swiper-button-next', // Next button selector
+                    prevEl: '.swiper-button-prev', // Previous button selector
+                },
+            });
+        });
+        
+    </script>
+
+</body>
+</html>

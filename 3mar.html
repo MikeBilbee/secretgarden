@@ -9,12 +9,17 @@ DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Fleur+De+Leah&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <style>
     body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+	height: 100vh;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    margin-left: -25px;
 }
 @keyframes fadeInAnimation {
     0% {
@@ -24,14 +29,7 @@ DOCTYPE html>
         opacity: 1;
     }
 }
-    body {
-        height: 100vh;
-        margin: 0;
-        width: 100%;
-        overflow-x: hidden;
-        margin-left: -25px;
-    }
-   
+
     svg {
         font-family: "Montserrat";
         font-size: 15em;

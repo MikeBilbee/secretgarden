@@ -24,7 +24,7 @@ Your mission is to create an engaging and profound online experience that repres
 | File | Description | Assets |
 | ----- | ----- | ----- |
 | [login.html](https://github.com/MikeBilbee/secretgarden/blob/main/login.html) | Login page for accessing the secret garden application. | []() []() |
-| [1jan.html](https://github.com/MikeBilbee/secretgarden/blob/main/1jan.html) | January birthdays with Carnations, the birth flower symbolizing love and admiration. | [holly](https://github.com/MikeBilbee/secretgarden/blob/main/images/carnation.png) [holly2](https://github.com/MikeBilbee/secretgarden/blob/main/images/holly2.png) [holly3] (https://github.com/MikeBilbee/secretgarden/blob/main/images/holly3.png)
+| [1jan.html](https://github.com/MikeBilbee/secretgarden/blob/main/1jan.html) | January birthdays with Carnations, the birth flower symbolizing love and admiration. | [holly](https://github.com/MikeBilbee/secretgarden/blob/main/images/carnation.png) [holly2](https://github.com/MikeBilbee/secretgarden/blob/main/images/holly2.png) [holly3](https://github.com/MikeBilbee/secretgarden/blob/main/images/holly3.png) |
 | [2feb.html](https://github.com/MikeBilbee/secretgarden/blob/main/2feb.html) | Discover the beauty of Violets of February, representing faithfulness and virtue. | []() []() |
 | [3mar.html](https://github.com/MikeBilbee/secretgarden/blob/main/3mar.html) | Explore Daffodils for March, symbolizing rebirth and new beginnings. | []() []() |
 | [4apr.html](https://github.com/MikeBilbee/secretgarden/blob/main/4apr.html) | Embrace the elegance of Daisies for April, signifying purity and innocence. | []() []() |

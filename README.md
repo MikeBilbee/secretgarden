@@ -23,8 +23,8 @@ Your mission is to create an engaging and profound online experience that repres
 
 | File | Description | Assets |
 | ----- | ----- | ----- |
-| [login.html](https://github.com/MikeBilbee/secretgarden/blob/main/login.html) |  | []() [Our Landing Login Page]() |
-| [1jan.html](https://github.com/MikeBilbee/secretgarden/blob/main/1jan.html) |  | []() []() |
+| [login.html](https://github.com/MikeBilbee/secretgarden/blob/main/login.html) |  | []() []() |
+| [1jan.html](https://github.com/MikeBilbee/secretgarden/blob/main/1jan.html) |  | [Our Landing Login Page]() []() |
 | [2feb.html](https://github.com/MikeBilbee/secretgarden/blob/main/2feb.html) |  | []() []() |
 | [3mar.html](https://github.com/MikeBilbee/secretgarden/blob/main/3mar.html) |  | []() []() |
 | [4apr.html](https://github.com/MikeBilbee/secretgarden/blob/main/4apr.html) |  | []() []() |

@@ -24,6 +24,7 @@
         opacity: 1;
     }
 }
+
     body {
         height: 100vh;
         margin: 0;
@@ -34,7 +35,7 @@
    
     svg {
         font-family: "Montserrat";
-        font-size: 15em;
+        font-size: 12em;
         font-weight: bold;
         text-transform: uppercase;
         transition: 1s font-size;
@@ -54,11 +55,12 @@
         fill: white;
         mask: url(#mask)
     }
-
-    .chrysanthemum {
+   
+    /* Good!!! */
+    .ch {
         position: absolute;
-        top: 58%;
-        left: 35%;
+        top: 62%;
+        left: 32%;
         transform: translateX(-250%);
         transition: opacity 0.5s ease;
         width: 50px; /* Adjust the width of the image */
@@ -66,10 +68,11 @@
         opacity: 1;
     }
    
-    .chrysanthemum2 {
+    /* End flower */
+    .ch2 {
         position: absolute;
-        top: 43%;
-        left: 63%;
+        top: 41%;
+        left: 68%;
         transform: translateX(-170%);
         transition: opacity 0.5s ease;
         width: 50px; /* Adjust the width of the image */
@@ -77,10 +80,15 @@
         opacity: 1;
     }
 
-    .chrysanthemum3 {
+    .ch2 {
+        transform: scale(0.39);
+    }
+   
+    /* Yellow - small GOOD */
+    .ch3 {
         position: absolute;
-        top: 43%;
-        left: 48%;
+        top: -9%;
+        left: 44%;
         transform: translateX(1200%);
         transition: opacity 0.5s ease;
         width: 50px; /* Adjust the width of the image */
@@ -89,10 +97,15 @@
         z-index: 2;
     }
 
-    .chrysanthemum4 {
+    .ch3 {
+        transform: scale(0.30);
+    }
+   
+    /* Beauty round white with pink */
+    .ch4 {
         position: absolute;
         top: 43%;
-        left: 53%;
+        left: 64%;
         transform: translateX(700%);
         transition: opacity 0.5s ease;
         width: 50px; /* Adjust the width of the image */
@@ -100,11 +113,16 @@
         opacity: 1;
         z-index: 1;
     }
+
+    .ch4 {
+        transform: scale(0.30);
+    }
    
-    .chrysanthemum5 {
+    /* GOOD! ugly pink, white, and yellow in middle */
+    .ch5 {
         position: absolute;
-        top: 43%; /*53%*/
-        left: 43%;
+        top: 41%; /*53%*/
+        left: 20%;
         transform: translateX(250%);
         transition: opacity 0.5s ease;
         width: 50px; /* Adjust the width of the image */
@@ -112,11 +130,16 @@
         opacity: 1;
     }
 
+    .ch5 {
+        transform: scale(0.30);
+    }
 
-    .chrysanthemum6 {
+
+   /* Three orange flowers GOOD */
+    .ch6 {
         position: absolute;
-        top: 49%; /* 55 */
-        left: 33%;
+        top: 38%; /* 55 */
+        left: 28%;
         transform: translateX(-10%);
         transition: opacity 0.5s ease;
         width: 50px; /* Adjust the width of the image */
@@ -125,22 +148,31 @@
         z-index: 0;
     }
 
+    .ch6 {
+        transform: scale(0.30);
+    }
    
-    .chrysanthemum7 {
+    /* Red GOOD! */
+    .ch7 {
         position: absolute;
         top: 36%;
-        left: 36%;
+        left: 43%;
         transform: translateX(1200%);
         transition: opacity 0.5s ease;
         width: 50px; /* Adjust the width of the image */
         height: auto; /* Automatically adjust the height to maintain aspect ratio */
         opacity: 1;
     }
+
+    .ch7 {
+        transform: scale(0.30);
+    }
    
-    .chrysanthemum8 {
+    /* Round white */
+    .ch8 {
         position: absolute;
         top: 58%;
-        left: 59%;
+        left: 57%;
         transform: translateX(1200%);
         transition: opacity 0.5s ease;
         width: 50px; /* Adjust the width of the image */
@@ -148,6 +180,11 @@
         opacity: 1;
         z-index: 2;
     }
+
+    .ch8 {
+        transform: scale(0.50);
+    }
+   
    
     img {
         margin-top: -200px;
@@ -166,9 +203,9 @@
         text-align: center;
         color: #ffc30b;
         padding: 5px;
-        width: 80%;
+        width: 100%;
         font-family: 'Corinthia';
-        font-size: 180px;
+        font-size: 200px;
         text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.5);
         height: 52%;
         z-index: 2;
@@ -252,14 +289,14 @@
             font-size: 4em;
         }
    
-        .chrysanthemum,
-        .chrysanthemum2,
-        .chrysanthemum3,
-        .chrysanthemum4,
-        .chrysanthemum5,
-        .chrysanthemum6,
-        .chrysanthemum7,
-        .chrysanthemum8
+        .ch,
+        .ch2,
+        .ch3,
+        .ch4,
+        .ch5,
+        .ch6,
+        .ch7,
+        .ch8
         {
             opacity: 0; /* Set initial opacity to 0 */
             transition: opacity 0.5s ease; /* Add transition effect */
@@ -267,14 +304,14 @@
     }
    
     @media screen and (max-width: 1080px) {
-        .chrysanthemum,
-        .chrysanthemum2,
-        .chrysanthemum3,
-        .chrysanthemum4,
-        .chrysanthemum5,
-        .chrysanthemum6,
-        .chrysanthemum7,
-        .chrysanthemum8
+        .ch,
+        .ch2,
+        .ch3,
+        .ch4,
+        .ch5,
+        .ch6,
+        .ch7,
+        .ch8
          {
             opacity: 0; /* Set opacity to 0 */
             transition: opacity 0.5s ease; /* Add transition effect */
@@ -293,14 +330,14 @@
             overflow-x: hidden;
         }
    
-        .chrysanthemum,
-        .chrysanthemum2,
-        .chrysanthemum3,
-        .chrysanthemum4,
-        .chrysanthemum5,
-        .chrysanthemum6,
-        .chrysanthemum7,
-        .chrysanthemum8
+        .ch,
+        .ch2,
+        .ch3,
+        .ch4,
+        .ch5,
+        .ch6,
+        .ch7,
+        .ch8
          {
             opacity: 0; /* Set initial opacity to 0 */
             transition: opacity 0.5s ease; /* Add transition effect */
@@ -541,7 +578,7 @@
     #cycle-container .center {
         position: absolute;
         top: 55%;
-        right: 80%; /* Adjust the left position as needed */
+        right: 52%; /* Adjust the left position as needed */
         transform: translate(-50%, -50%);
     }
    
@@ -701,36 +738,36 @@
     <defs>
         <mask id="mask" x="0" y="0" height="100%" width="100%">
             <rect x="0" y="0" height="100%" width="100%" />
-            <text x="50%" y="50%" fill="black" text-anchor="middle" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">NOVEMBER</text>
+            <text x="50%" y="50%" fill="black" text-anchor="middle" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">November</text>
 
         </mask>
     </defs>
     <rect x="0" y="0" height="100%" width="100%" />
 </svg>
 
-    <div class="Chrysanthemum">
-        <img class="drop-shadow" src="images/Chrysanthemum.png" alt="Chrysanthemum Image" width="150" height="150" />
+    <div class="ch">
+        <img class="drop-shadow" src="images/Chrysanthemum.png" alt="Cosmo Image" width="250" height="150"  /> <!--Yellow with green in middle-->
     </div>
-    <div class="Chrysanthemum2"> 
-        <img class="drop-shadow" src="images/Chrysanthemum2.png" alt="Chrysanthemum Image 2" width="400" height="400" />
+    <div class="ch2"> 
+        <img class="drop-shadow" src="images/Chrysanthemum2.png" alt="Cosmo Image 2" width="400" height="400" />
     </div>
-    <div class="Chrysanthemum3">
-        <img class="drop-shadow" src="images/Chrysanthemum3.png" alt="Chrysanthemum Image 3" width="400" height="400" />
+    <div class="ch3">
+        <img class="drop-shadow" src="images/Chrysanthemum3.png" alt="Cosmo Image 3" width="1150" height="1150" /> <!-- Small Yellow-->
     </div>
-    <div class="Chrysanthemum4">
-        <img class="drop-shadow" src="images/Chrysanthemum4.png" alt="Chrysanthemum Image 4" width="400" height="400" />
+    <div class="ch4">
+        <img class="drop-shadow" src="images/Chrysanthemum4.png" alt="Cosmo Image 4" width="400" height="400" />
     </div>
-    <div class="Chrysanthemum5">
-        <img class="drop-shadow" src="images/Chrysanthemum5.png" alt="Chrysanthemum Image 5" width="400" height="400" />
+    <div class="ch5">
+        <img class="drop-shadow" src="images/Chrysanthemum5.png" alt="Cosmo Image 5" width="400" height="400" />
     </div>
-    <div class="Chrysanthemum6">
-        <img class="drop-shadow" src="images/Chrysanthemum6.png" alt="Chrysanthemum Image 6" width="300" height="300" />
+    <div class="ch6">
+        <img class="drop-shadow" src="images/Chrysanthemum6.png" alt="Cosmo Image 6" width="900" height="500" /> <!--Three Yellow Flowers-->
     </div>
-    <div class="Chrysanthemum7">
-        <img class="drop-shadow" src="images/Chrysanthemum7.png" alt="Chrysanthemum Image 2" width="500" height="500" />
+    <div class="ch7">
+        <img class="drop-shadow" src="images/Chrysanthemum7.png" alt="Cosmo Image 2" width="500" height="500" />
     </div>
-    <div class="Chrysanthemum8">
-        <img class="drop-shadow" src="images/Chrysanthemum8.png" alt="Chrysanthemum Image 7" width="200" height="200" />
+    <div class="ch8">
+        <img class="drop-shadow" src="images/Chrysanthemum8.png" alt="Cosmo Image 7" width="300" height="250" /> <!--Round White-->
     </div>
 
     <div class="flower-text">Chrysanthemum</div>
@@ -759,7 +796,7 @@
                     <div class="overlay"></div>
                     <div class="popup-content">
                         <h2>YES</h2>
-                        <p>Chrysanthemum flowers are edible, with petals used in salads, soups, and stir-fries, while the stems are usually tougher and have a more bitter flavor.  For the best flavor, choose chrysanthemums specifically grown for eating and use only the petals.</p>
+                        <p>Chrysanthemum flowers are edible, with petals used in salads, soups, and stir-fries, while the stems are usually tougher and have a more bitter flavor.</p>
                         <div class="controls">
                             <button class="close-btn">Close</button>
                         </div>
@@ -775,7 +812,7 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    Fall
+                    FALL
                 </a>
                 <div class="popup" id="cycle-popup">
                     <div class="overlay"></div>
@@ -874,7 +911,7 @@
                 <div class="popup" id="hardiness-popup">
                     <div class="overlay"></div>
                     <div class="popup-content">
-                        <h2>OCTOBER</h2>
+                        <h2>All-SEASON</h2>
                         <p>Chrysanthemums thrive outdoors in zones 5-9, surviving winter with some care. For colder zones, consider bringing potted mums indoors before the first frost.</p>
                         <div class="controls">
                             <button class="close-btn">Close</button>
@@ -882,7 +919,7 @@
                     </div>
                 </div>
             </div>
-            <p class="box-text">October</p>
+            <p class="box-text">All-Season</p>
         </div>
     </div>
 

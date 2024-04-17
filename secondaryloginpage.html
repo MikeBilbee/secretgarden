@@ -1,6 +1,6 @@
 <body>
     <header>
-        <h1 style="color:black">Secret Garden</h1>
+        <h1 style="color:goldenrod">Secret Garden</h1>
     </header>
     <style>
         * {
@@ -11,7 +11,7 @@ body {
     background-image: url(images/ukgarden.jpg);
 }
 header {
-    background-color: white;
+    background-color: black;
     color: white;
     display: flex;
     align-items: center;
@@ -24,6 +24,7 @@ h1 {
     font-family: 'system-ui';
     text-transform: uppercase;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow */
 }
 main {
     display: flex;
@@ -72,7 +73,7 @@ main {
 .submit_class {
     border-style: none;
     border-radius: 5px;
-    background-color: rgb(255, 215, 0);
+    background-color: rgb(222, 196, 45);
     padding: 8px 20px;
     font-family: 'system-ui';
     text-transform: uppercase;
@@ -85,7 +86,7 @@ main {
 }
 footer {
     height: 10vh;
-    background-color: white;
+    background-color: black;
     color: white;
     display: flex;
     align-items: center;
@@ -103,12 +104,34 @@ footer > p > a {
     font-weight: bold;
 }
     </style>
+
+    <!--Below is a cool design I am trying-->
+    <style>
+        /* Styles for form */
+        .form_class {
+            opacity: 0; /* Initially invisible */
+            animation: fadeIn 1s ease forwards; /* Fade in animation */
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px); /* Move up slightly */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+
     <main>
         <form id="login_form" class="form_class" action="#" method="post" onsubmit="return redirectToPage()">
             <div class="form_div">
-                <label>Name:</label>
+                <label style="color: goldenrod">Name</label>
                 <input id="name" class="field_class" name="login_txt" type="text" placeholder="Name" autofocus>
-                <label>Birthday Month:</label>
+                <label style="color: goldenrod">Birthday Month</label>
                 <select id="month_select" class="field_class" name="month_select">
                     <option value="1jan">January</option>
                     <option value="2feb">February</option>

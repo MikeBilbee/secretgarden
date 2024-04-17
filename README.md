@@ -25,17 +25,17 @@ Your mission is to create an engaging and profound online experience that repres
 | ----- | ----- | ----- |
 | [login.html](https://github.com/MikeBilbee/secretgarden/blob/main/login.html) | Login page for accessing the secret garden application. | []() []() |
 | [1jan.html](https://github.com/MikeBilbee/secretgarden/blob/main/1jan.html) | January birthdays with Carnations, the birth flower symbolizing love and admiration. | []() []() |
-| [2feb.html](https://github.com/MikeBilbee/secretgarden/blob/main/2feb.html) |  | []() []() |
-| [3mar.html](https://github.com/MikeBilbee/secretgarden/blob/main/3mar.html) |  | []() []() |
-| [4apr.html](https://github.com/MikeBilbee/secretgarden/blob/main/4apr.html) |  | []() []() |
-| [5may.html](https://github.com/MikeBilbee/secretgarden/blob/main/5may.html) |  | []() []() |
-| [6jun.html](https://github.com/MikeBilbee/secretgarden/blob/main/6jun.html) |  | []() []() |
-| [7jul.html](https://github.com/MikeBilbee/secretgarden/blob/main/7jul.html) |  | []() []() |
-| [8aug.html](https://github.com/MikeBilbee/secretgarden/blob/main/8aug.html) |  | []() []() |
-| [9sep.html](https://github.com/MikeBilbee/secretgarden/blob/main/9sep.html) |  | []() []() |
-| [10oct.html](https://github.com/MikeBilbee/secretgarden/blob/main/10oct.html) |  | []() []() |
-| [11nov.html](https://github.com/MikeBilbee/secretgarden/blob/main/11nov.html) |  | []() []() |
-| [12dec.html](https://github.com/MikeBilbee/secretgarden/blob/main/12dec.html) |  | []() []() |
+| [2feb.html](https://github.com/MikeBilbee/secretgarden/blob/main/2feb.html) | Discover the beauty of Violets of February, representing faithfulness and virtue. | []() []() |
+| [3mar.html](https://github.com/MikeBilbee/secretgarden/blob/main/3mar.html) | Explore Daffodils for March, symbolizing rebirth and new beginnings. | []() []() |
+| [4apr.html](https://github.com/MikeBilbee/secretgarden/blob/main/4apr.html) | Embrace the elegance of Daisies for April, signifying purity and innocence. | []() []() |
+| [5may.html](https://github.com/MikeBilbee/secretgarden/blob/main/5may.html) | Delight in Lily of the Valley, May's birth flower, representing sweetness and humility. | []() []() |
+| [6jun.html](https://github.com/MikeBilbee/secretgarden/blob/main/6jun.html) | June's birth flower symbolizing love and appreciation. | []() []() |
+| [7jul.html](https://github.com/MikeBilbee/secretgarden/blob/main/7jul.html) | July, known for its light-heartedness and levity. | []() []() |
+| [8aug.html](https://github.com/MikeBilbee/secretgarden/blob/main/8aug.html) | Discover the charm of Gladiolus, August's birth flower, symbolizing strength and moral integrity. | []() []() |
+| [9sep.html](https://github.com/MikeBilbee/secretgarden/blob/main/9sep.html) | Explore the beauty of September's birth flower, representing love, faith, and wisdom. | []() []() |
+| [10oct.html](https://github.com/MikeBilbee/secretgarden/blob/main/10oct.html) | Marvel at October's birth flower, symbolizing passion, creativity, and warmth. | []() []() |
+| [11nov.html](https://github.com/MikeBilbee/secretgarden/blob/main/11nov.html) | Embrace November's birth flower, symbolizing joy, optimism, and longevity. | []() []() |
+| [12dec.html](https://github.com/MikeBilbee/secretgarden/blob/main/12dec.html) | Celebrate December birthdays, the birth flower representing self-love and admiration. | []() []() |
 | [styles.css]() |  |  |
 ---
 

@@ -1,4 +1,4 @@
-<h1> Secret Garden </h1>
+<h1 style="font-color: green;"> Secret Garden </h1>
 
 This is the final project of Atlas T3 Fullstack course
 ---

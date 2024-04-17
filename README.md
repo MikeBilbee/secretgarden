@@ -36,7 +36,7 @@ Your mission is to create an engaging and profound online experience that repres
 | [10oct.html](https://github.com/MikeBilbee/secretgarden/blob/main/10oct.html) | Marvel at October's birth flower, symbolizing passion, creativity, and warmth. | []() []() |
 | [11nov.html](https://github.com/MikeBilbee/secretgarden/blob/main/11nov.html) | Embrace November's birth flower, symbolizing joy, optimism, and longevity. | []() []() |
 | [12dec.html](https://github.com/MikeBilbee/secretgarden/blob/main/12dec.html) | Celebrate December birthdays, the birth flower representing self-love and admiration. | []() []() |
-| [styles.css]() |  |  |
+| [styles.css]() | Stylesheet for the secret garden application. |  |
 ---
 
 © 2024 Stephaine Biggs, Mike Bilbee, Chris Gillis

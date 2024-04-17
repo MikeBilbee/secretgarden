@@ -1,8 +1,5 @@
 <h1> Secret Garden </h1>
-Style {
-font-color: green;
-}
-
+<span style="font-family: Arial, sans-serif;">Secret Garden</span>
 This is the final project of Atlas T3 Fullstack course
 ---
 

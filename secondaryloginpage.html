@@ -1,0 +1,169 @@
+<body>
+    <header>
+        <h1 style="color:black">Secret Garden</h1>
+    </header>
+    <style>
+        * {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-image: url(images/ukgarden.jpg);
+}
+header {
+    background-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+h1 {
+    letter-spacing: 1.5vw;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    text-align: center;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mountains-1412683.svg/1280px-Mountains-1412683.svg.png) no-repeat center center;
+    background-size: cover;
+}
+.form_class {
+    width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'system-ui';
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+.form_div {
+    text-transform: uppercase;
+}
+.form_div > label {
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+.info_div {
+    text-align: center;
+    margin-top: 20px;
+}
+.info_div {
+    letter-spacing: 1px;
+}
+.field_class {
+    width: 100%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 0px;
+    text-indent: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'system-ui';
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+.submit_class {
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(255, 215, 0);
+    padding: 8px 20px;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+    cursor: pointer;
+}
+footer {
+    height: 10vh;
+    background-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px -5px 10px rgb(0,0,0,0.3);
+}
+footer > p {
+    text-align: center;
+    font-family: 'system-ui';
+    letter-spacing: 3px;
+}
+footer > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+    </style>
+    <main>
+        <form id="login_form" class="form_class" action="#" method="post" onsubmit="return redirectToPage()">
+            <div class="form_div">
+                <label>Name:</label>
+                <input id="name" class="field_class" name="login_txt" type="text" placeholder="Name" autofocus>
+                <label>Birthday Month:</label>
+                <select id="month_select" class="field_class" name="month_select">
+                    <option value="1jan">January</option>
+                    <option value="2feb">February</option>
+                    <option value="3mar">March</option>
+                    <option value="4apr">April</option>
+                    <option value="5may">May</option>
+                    <option value="6jun">June</option>
+                    <option value="7july">July</option>
+                    <option value="8aug">August</option>
+                    <option value="9sep">September</option>
+                    <option value="10oct">October</option>
+                    <option value="11nov">November</option>
+                    <option value="12dec">December</option>
+                </select>
+                <button class="submit_class" type="submit">Enter</button>
+            </div>
+            <div class="info_div">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Stephaine Biggs, Mike Bilbee, and Chris Gillis <a href="#"></a></p>
+    </footer>
+
+    <scripts>
+        <script>
+            // Function to redirect to corresponding page based on selected month
+            function redirectToPage() {
+                var monthSelect = document.getElementById("month_select");
+                var selectedMonth = monthSelect.value;
+                window.location.href = selectedMonth + ".html"; // Redirect to the selected month's page
+                return false; // Prevent default form submission
+            }
+        </script>
+    </scripts>
+    <script>
+        // Function to set cookie
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        // Function to handle form submission
+        function handleFormSubmit() {
+            var nameInput = document.getElementById("name").value;
+            setCookie("username", nameInput, 30); // Set cookie for 30 days
+            return true; // Allow form submission to proceed
+        }
+
+        // Attach event listener to form submission
+        document.getElementById("login_form").addEventListener("submit", handleFormSubmit);
+    </script>
+</body>

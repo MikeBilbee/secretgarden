@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="images/favicon.png" type="image/favicon">
 	<title>Secret Garden</title>
 	<meta name="description" content="Bootstrap is a free and open-source CSS framework">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
@@ -33,44 +34,40 @@
 	<section class="login">
 		<div>
 			<h1> Login </h1>
-			<form class="form" action="javascript:redirect()">
-				<label for="firstname">First Name</label>
 				<input class="boxtext" type="text" id="firstname" placeholder="Firstname"/>
-				<label for="birthmonth">Birth Month</label>
-				<select class="boxtext" name="birthmonth" id="month">
-				  <option value="No Month Selected">No Month Selected</option>
-				  <option value="1jan.html">January</option>
-				  <option value="2feb.html">Febuary</option>
-				  <option value="3mar.html">March</option>
-				  <option value="4apr.html">April</option>
-				  <option value="5may.html">May</option>
-				  <option value="6jun.html">June</option>
-				  <option value="7jul.html">July</option>
-				  <option value="8aug.html">August</option>
-				  <option value="9sep.html">September</option>
-				  <option value="10oct.html">October</option>
-				  <option value="11nov.html">November</option>
-				  <option value="12dec.html">December</option>
-				</select>
-				<button onclick="setCookies" type="button">Enter</button>
-		  </form>
+				<button onclick="myFunction()" type="button">Enter</button>
 		</div>
 
-		<script class="">
-	  		function setCookies() {
-				document.cookie = `firstname=${document.querySelector('#firstname').value}`;
-				document.cookie = `month=${document.querySelector('#month').value}`;
-	  		}
-		</script>
+		<div class="months" id="months">
+			<label for="birthmonth">What Month were you born?</label>
+			<ul>
+				<li><a href="1jan.html">January</a></li>
+				<li><a href="2feb.html">Febuary</a></li>
+				<li><a href="3mar.html">March</a></li>
+				<li><a href="4apr.html">April</a></li>
+				<li><a href="5may.html">May</a></li>
+				<li><a href="6jun.html">June</a></li>
+				<li><a href="7jul.html">July</a></li>
+				<li><a href="8aug.html">August</a></li>
+				<li><a href="9sep.html">September</a></li>
+				<li><a href="10oct.html">October</a></li>
+				<li><a href="11nov.html">November</a></li>
+				<li><a href="12dec.html">December</a></li>
+			</ul>
+		</div>
 
-<script>
-	function redirect() {
-		var selectedPage = document.getElementById("pageSelect").value;
-		if (selectedPage !== "") {
-			window.location.href = selectedPage;
-		}
-	}
-</script>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("months");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+
+				document.cookie = `firstname=${document.querySelector('#firstname').value}`;
+			}
+		</script>
 	</section>
 
 	<footer>
@@ -83,6 +80,9 @@
 		</div>
 	</footer>
 
+	<script>
+		document.getElementById("months").style.display = "none";
+	</script>
 </body>
 
 </html>
